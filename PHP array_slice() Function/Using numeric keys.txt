@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$a=array(0=>"red",1=>"green",2=>"blue");
+echo array_shift($a)."<br>";
+print_r ($a);
+?>
+
+</body>
+</html>
+
+
+
+
+red
+Array ( [0] => green [1] => blue )

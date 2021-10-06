@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$a=array("Volvo","XC90",array("BMW","Toyota"));
+$reverse=array_reverse($a);
+$preserve=array_reverse($a,true);
+
+print_r($a);
+print_r($reverse);
+print_r($preserve);
+?>
+
+</body>
+</html>
+
+
+
+
+Array ( [0] => Volvo [1] => XC90 [2] => Array ( [0] => BMW [1] => Toyota ) ) Array ( [0] => Array ( [0] => BMW [1] => Toyota ) [1] => XC90 [2] => Volvo ) Array ( [2] => Array ( [0] => BMW [1] => Toyota ) [1] => XC90 [0] => Volvo )

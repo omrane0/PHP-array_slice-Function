@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+// Preserve parameter set to true:
+$a=array("red","green","blue","yellow","brown");
+print_r(array_slice($a,1,2,true));
+
+// Preserve parameter set to false (default):
+$a=array("red","green","blue","yellow","brown");
+print_r(array_slice($a,1,2,false));
+
+// Note the differences in the array keys
+?>
+
+</body>
+</html>
+
+
+
+
+Array ( [1] => green [2] => blue ) Array ( [0] => green [1] => blue )
